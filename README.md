@@ -8,7 +8,7 @@ Back-End
 Comandos e Frameworks Utilizados
 
 Para baixar as dependencias do projeto:
-    -python3 -m venv ./venv
+    - python3 -m venv ./venv
 
 Para executar a venv:
     source vemv/bin/activate
