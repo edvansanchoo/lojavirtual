@@ -59,6 +59,12 @@
   
   <pre>Link de acesso: http://127.0.0.1:8000/admin/</pre>
 
+<h4>Para instalar o django-rest-framework</h4>
+
+<pre>
+  Link da Documentação:  https://www.django-rest-framework.org/
+  pip install djangorestframework
+</pre>
 # --------------------------------------------------------------------------
 
 <h2><font color="black">EndPoints da API</font></h2>
