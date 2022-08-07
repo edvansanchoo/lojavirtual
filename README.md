@@ -39,8 +39,8 @@
 
 # --------------------------------------------------------------------------
 
-<h4>Após ter os seus models ccriados, faça a migração para o banco de dados
-  <p>Nesse caso estamos usando o Mysqlite</h4>
+<h4>Após ter os seus models criados, faça a migração para o banco de dados
+  <p>Nesse caso estamos usando o SQLite</h4>
 
 <h4>(Necessário para poder realizar a contrução das tabelas do banco)
 <p>No arquivo config/settings.py
