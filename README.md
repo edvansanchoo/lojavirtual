@@ -6,7 +6,7 @@
 <h2><font color="black">Back-End</font></h2>
 
 
-<h3>Comandos e Frameworks Utilizados n</h3>
+<h3>Comandos e Frameworks Utilizados</h3>
 <br>
 <h4>Para baixar as dependencias do projeto:</h4>
   <pre>python3 -m venv ./venv</pre>
