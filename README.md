@@ -76,12 +76,12 @@ GET:
 POST:
   <p>&emsp;SaveProduto: http://127.0.0.1:8000/produto/Produto/
   <p>&emsp;&emsp;JSON:
-  <code><p>&emsp;&emsp;&emsp;{
-    <p>&emsp;&emsp;&emsp;&emsp;"nome": "Picanha",
-    <p>&emsp;&emsp;&emsp;&emsp;"preco": "60.90",
-    <p>&emsp;&emsp;&emsp;&emsp;"quantidade": 500,
-    <p>&emsp;&emsp;&emsp;&emsp;"categoria": 5
-  <p>&emsp;&emsp;&emsp;}</code>
+  <p><code>&emsp;&emsp;&emsp;{</br>
+    &emsp;&emsp;&emsp;&emsp;"nome": "Picanha",</br>
+    &emsp;&emsp;&emsp;&emsp;"preco": "60.90",</br>
+    &emsp;&emsp;&emsp;&emsp;"quantidade": 500,</br>
+    &emsp;&emsp;&emsp;&emsp;"categoria": 5</br>
+  &emsp;&emsp;&emsp;}</code></p>
     
 PUT:
   <p>&emsp;UpdateProduto: http://127.0.0.1:8000/produto/Produto/8/
