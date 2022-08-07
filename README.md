@@ -1,6 +1,6 @@
 <h1>Projeto Loja Virtual</h1>
 
-<h2>Projeto Criado no Sitema Operacional: Linux Mint 20.3</h2>
+<h3>Projeto Criado no Sitema Operacional: Linux Mint 20.3</h3>
 
 
 <h2><font color="black">Back-End</font></h2>
