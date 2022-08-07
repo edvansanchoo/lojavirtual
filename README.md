@@ -110,7 +110,7 @@ POST:
   <br>&emsp;SavaCategoria: http://127.0.0.1:8000/categoria/Categoria/
   <br>&emsp;&emsp;JSON:
   <code>{
-    <br>"nome": "Pets em Geral"
+    <p>"nome": "Pets em Geral"
   }</code>
     
 PUT:
