@@ -52,19 +52,16 @@
 <p>e depois:
   <pre>python manager.py migrate</pre>
 
+<h4>Para instalar o django-rest-framework</h4>
+  <pre>Link da Documentação:  https://www.django-rest-framework.org/</pre>
+  <pre> pip install djangorestframework</pre>
+
 # --------------------------------------------------------------------------
 
 <h4>Para criar um usuario de acesso ao Djando-admin:</h4>
   <pre>python manager.py createsuperuser</pre>
   
   <pre>Link de acesso: http://127.0.0.1:8000/admin/</pre>
-
-<h4>Para instalar o django-rest-framework</h4>
-
-<pre>
-  Link da Documentação:  https://www.django-rest-framework.org/
-  pip install djangorestframework
-</pre>
 # --------------------------------------------------------------------------
 
 <h2><font color="black">EndPoints da API</font></h2>
