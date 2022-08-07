@@ -109,9 +109,9 @@ GET:
 POST:
   <br>&emsp;SavaCategoria: http://127.0.0.1:8000/categoria/Categoria/
   <br>&emsp;&emsp;JSON:
-  <code><br>&emsp;&emsp;&emsp;{
-    <br>&emsp;&emsp;&emsp;&emsp;"nome": "Pets em Geral"
-  <br>&emsp;&emsp;&emsp;}</code>
+  <code>{
+    <br>"nome": "Pets em Geral"
+  }</code>
     
 PUT:
   <br>&emsp;UpdateCategoria: http://127.0.0.1:8000/categoria/Categoria/2/
