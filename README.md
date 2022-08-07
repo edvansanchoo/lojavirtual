@@ -35,7 +35,7 @@
   <pre>source vemv/bin/activate</pre>
 
 <h4>&emsp;Para criar a aplicação:</h4>
-  <pre>python manager.py startapp lojavirtualapi</pre>
+  <pre>python manage.py startapp lojavirtualapi</pre>
 
 # --------------------------------------------------------------------------
 
