@@ -12,7 +12,7 @@
   <pre>python3 -m venv ./venv</pre>
 
 <h4>Para executar a venv:</h4>
-  <pre>source vemv/bin/activate</pre>
+  <pre>source venv/bin/activate</pre>
 
 
 <h4>Para Instalar o Django depois de executar a venv:</h4>
