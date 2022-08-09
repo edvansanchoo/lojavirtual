@@ -2,6 +2,24 @@
 
 <h3>Projeto Criado no Sitema Operacional: Linux Mint 20.3</h3>
 
+<h2><font color="black">Front-End</font></h2>
+
+<h3>Instalar NodeJS 16</h3>
+
+<pre>
+  Link do Site de tutorial:  https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt
+
+  cd ~
+  curl -sL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
+
+  nano nodesource_setup.sh
+
+  sudo bash nodesource_setup.sh
+
+  sudo apt install nodejs
+
+  node -v
+</pre>
 
 <h2><font color="black">Back-End</font></h2>
 
