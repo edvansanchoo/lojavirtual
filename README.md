@@ -6,7 +6,7 @@
 
 <h3>Instalar NodeJS 16</h3>
 
-<pre>
+<pre><code>
   Link do Site de tutorial:  https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt
 
   cd ~
@@ -19,13 +19,13 @@
   sudo apt install nodejs
 
   node -v
-</pre>
+</code></pre>
 
 <h3>Instalar npm</h3>
 <pre><code>sudo apt install npm -y</code></pre>
 
 <h3>Instalar Vue CLI de Forma Global</h3>
-<pre>sudo npm install -g @vue/cli</pre>
+<pre><code>sudo npm install -g @vue/cli</code></pre>
 
 <h2><font color="black">Back-End</font></h2>
 
@@ -33,33 +33,33 @@
 <h3>Comandos e Frameworks Utilizados</h3>
 <br>
 <h4>Para baixar as dependencias do projeto:</h4>
-  <pre>python3 -m venv ./venv</pre>
+  <pre><code>python3 -m venv ./venv</code></pre>
 
 <h4>Para executar a venv:</h4>
-  <pre>source venv/bin/activate</pre>
+  <pre><code>source venv/bin/activate</code></pre>
 
 
 <h4>Para Instalar o Django depois de executar a venv:</h4>
-  <pre>pip install django</pre>
+  <pre><code>pip install django</code></pre>
 
 <h4>Caso queira ter certeza das depencias que estão sendo usadas:</h4>
-  <pre>pip freeze</pre>
+  <pre><code>pip freeze</code></pre>
 
 <h4>Para criar a aplicação do djando-admin:</h4>
 ("config" foi o nome que eu escolhi pode ser outro caso deseje)
   <pre>django-admin startproject config .</pre>
 
 <h4>Para Executar o Servidor:</h4>
-  <pre>python manager.py runserver</pre>
+  <pre><code>python manager.py runserver</code></pre>
 
 # --------------------------------------------------------------------------
 
 <h4>Para não precisar derrubar o server, abra outro terminal</h4>
 <h4>&emsp;entre na venv:</h4>
-  <pre>source vemv/bin/activate</pre>
+  <pre><code>source vemv/bin/activate</code></pre>
 
 <h4>&emsp;Para criar a aplicação:</h4>
-  <pre>python manage.py startapp lojavirtualapi</pre>
+  <pre><code>python manage.py startapp lojavirtualapi</code></pre>
 
 # --------------------------------------------------------------------------
 
@@ -72,20 +72,20 @@
   <p>&emsp;&emsp;Nesse caso o nosso foi lojavirtualapi</h4>
 
 <h4>Para fazer a criação das tabelas no banco:
-  <pre>python manager.py makemigrations</pre>
+  <pre><code>python manager.py makemigrations</code></pre>
 <p>e depois:
-  <pre>python manager.py migrate</pre>
+  <pre><code>python manager.py migrate</code></pre>
 
 <h4>Para instalar o django-rest-framework</h4>
-  <pre>Link da Documentação:  https://www.django-rest-framework.org/</pre>
-  <pre> pip install djangorestframework</pre>
+  <pre><code>Link da Documentação:  https://www.django-rest-framework.org/</code></pre>
+  <pre><code> pip install djangorestframework</code></pre>
 
 # --------------------------------------------------------------------------
 
 <h4>Para criar um usuario de acesso ao Djando-admin:</h4>
-  <pre>python manager.py createsuperuser</pre>
+  <pre><code>python manager.py createsuperuser</code></pre>
   
-  <pre>Link de acesso: http://127.0.0.1:8000/admin/</pre>
+  <pre><code>Link de acesso: http://127.0.0.1:8000/admin/</code></pre>
 # --------------------------------------------------------------------------
 
 <h2><font color="black">EndPoints da API</font></h2>
@@ -94,15 +94,15 @@
 <br>
 
 GET:
-  <pre>
+  <pre><code>
   ListAllProduto: http://127.0.0.1:8000/produto/Produto/
   FilterByIdProduto: http://127.0.0.1:8000/produto/Produto/3/
   FilterByNomeProduto: http://127.0.0.1:8000/produto/Produto/?nome=Arroz
   FilterByCategoriaProduto: http://127.0.0.1:8000/produto/Produto/?categoria=5
-  </pre>
+  </code></pre>
   
 POST:
-  <pre>
+  <pre><code>
   SaveProduto: http://127.0.0.1:8000/produto/Produto/
   JSON:
   {
@@ -111,10 +111,10 @@ POST:
     "quantidade": 500,
     "categoria": 5
   }
-  </pre>
+  </code></pre>
     
 PUT:
-  <pre>
+  <pre><code>
   UpdateProduto: http://127.0.0.1:8000/produto/Produto/8/
   JSON:
     {
@@ -124,45 +124,45 @@ PUT:
       "quantidade": 300,
       "categoria": 5
     }
-  </pre>
+  </code></pre>
     
 DELETE:
-  <pre>
+  <pre><code>
   DeleteProduto: http://127.0.0.1:8000/produto/Produto/8/
-  </pre>
+  </code></pre>
     
 
 # -------------------------------------------------------------------------
 <h3>CATEGORIA:</h3>
 
 GET:
-  <pre>
+  <pre><code>
   ListAllCategoria: http://127.0.0.1:8000/categoria/Categoria
   FilterByIdCategoria: http://127.0.0.1:8000/categoria/Categoria/2/
   FilterByNomeCategoria: http://127.0.0.1:8000/categoria/Categoria/?nome=Higiene
-  </pre>
+  </code></pre>
 POST:
-  <pre>
+  <pre><code>
   SavaCategoria: http://127.0.0.1:8000/categoria/Categoria/
   JSON:
     {
       "nome": "Pets em Geral"
     }
-  </pre>
+  </code></pre>
     
 PUT:
-  <pre>
+  <pre><code>
   UpdateCategoria: http://127.0.0.1:8000/categoria/Categoria/2/
   JSON:
     {
       "id": 2,
       "nome": "Limpeza Geral"
     }
-  </pre>
+  </code></pre>
     
 DELETE:
-  <pre>
+  <pre><code>
   DeleteCategoria: http://127.0.0.1:8000/categoria/Categoria/2/
-  </pre>
+  </code></pre>
 
 
