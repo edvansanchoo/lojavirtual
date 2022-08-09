@@ -21,7 +21,7 @@ class ProdutosViewSet(viewsets.ModelViewSet):
         return queryset
 
 class CategoriaViewSet(viewsets.ModelViewSet):
-    serializer_class = CategoriaSerilizer
+    serializer_class = CategoriaSerilizer  
 
     def get_queryset(self):
         queryset = Categoria.objects.all()
