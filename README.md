@@ -47,7 +47,7 @@
 
 <h4>Para criar a aplicação do djando-admin:</h4>
 ("config" foi o nome que eu escolhi pode ser outro caso deseje)
-  <pre>django-admin startproject config .</pre>
+  <pre><code>django-admin startproject config .</code></pre>
 
 <h4>Para Executar o Servidor:</h4>
   <pre><code>python manager.py runserver</code></pre>
