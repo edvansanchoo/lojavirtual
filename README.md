@@ -50,7 +50,7 @@
   <pre><code>django-admin startproject config .</code></pre>
 
 <h4>Para Executar o Servidor:</h4>
-  <pre><code>python manager.py runserver</code></pre>
+  <pre><code>python manage.py runserver</code></pre>
 
 # --------------------------------------------------------------------------
 
