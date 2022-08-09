@@ -22,7 +22,7 @@
 </pre>
 
 <h3>Instalar npm</h3>
-<pre>sudo apt install npm -y</pre>
+<pre><code>sudo apt install npm -y</code></pre>
 
 <h3>Instalar Vue CLI de Forma Global</h3>
 <pre>sudo npm install -g @vue/cli</pre>
