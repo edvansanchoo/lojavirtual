@@ -2,22 +2,22 @@
     <div>
         <p>Componente de Mensagem</p>
     <div>
-        <form id="produto-form">
+        <form id="produto-form" @submit="salvarProduto">
             <div class="input-container">
                 <label for="nome">Nome do Produto: </label>
-                <input type="text" id="nome" name="name" v-model="nome" placeholder="Digite o nome do Produto">
+                <input type="text" id="nome" name="name" v-model="produto.nome" placeholder="Digite o nome do Produto">
             </div>
             <div class="input-container">
                 <label for="preco">Preço do Produto: </label>
-                <input type="text" id="preco" name="preco" v-model="preco" placeholder="R$:">
+                <input type="text" id="preco" name="preco" v-model="produto.preco" placeholder="R$:">
             </div>
             <div class="input-container">
                 <label for="quantidade">Quantidade do Produto: </label>
-                <input type="text" id="quantidade" name="quantidade" v-model="quantidade" placeholder="Digite a quantidade de Produtos">
+                <input type="text" id="quantidade" name="quantidade" v-model="produto.quantidade" placeholder="Digite a quantidade de Produtos">
             </div>
             <div class="input-container">
                 <label id="categoria-title" for="categoria">Escolha a Categoria do Produto: </label>
-                <select name="categoria" id="categoria" v-model="categoria">
+                <select name="categoria" id="categoria" v-model="produto.categoria">
                     <option value="">Selecione a categoria</option>
                     <option v-for="categoria in categoriadata" :key="categoria.id" :value="categoria.nome">{{categoria.nome}}</option>
                 </select>
@@ -37,20 +37,23 @@ export default {
     name: "ProdutoForm",
     data() {
         return {
-            nomes: null,
-            precos: null,
-            quantidades: null,
-            categoriadata: null,
-            nome: null,
-            preco: null,
-            quantidade: null,
-            categorias: []
+            produto: {
+                nome: null,
+                preco: null,
+                quantidade: null,
+                categoria: null
+            },
+            categoriadata: []
+        }
+    },
+    methods:{
+        salvarProduto(){
+            alert(this.produto.nome)
         }
     },
     mounted(){
         Categoria.getAllCategoria().then(resposta => {
             this.categoriadata = resposta.data
-            console.log(resposta.data)
         })
     }
 }
