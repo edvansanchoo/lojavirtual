@@ -19,7 +19,7 @@
                 <label id="categoria-title" for="categoria">Escolha a Categoria do Produto: </label>
                 <select name="categoria" id="categoria" v-model="categoria">
                     <option value="">Selecione a categoria</option>
-                    <option value="Trocar">Trocar</option>
+                    <option v-for="categoria in categoriadata" :key="categoria.id" :value="categoria.nome">{{categoria.nome}}</option>
                 </select>
             </div>
             <div class="input-container">
@@ -31,8 +31,28 @@
 </template>
 
 <script>
+import Categoria from '../services/categoria'
+
 export default {
-    name: "ProdutoForm"
+    name: "ProdutoForm",
+    data() {
+        return {
+            nomes: null,
+            precos: null,
+            quantidades: null,
+            categoriadata: null,
+            nome: null,
+            preco: null,
+            quantidade: null,
+            categorias: []
+        }
+    },
+    mounted(){
+        Categoria.getAllCategoria().then(resposta => {
+            this.categoriadata = resposta.data
+            console.log(resposta.data)
+        })
+    }
 }
 </script>
 <style scoped>

@@ -80,6 +80,10 @@
   <pre><code>Link da Documentação:  https://www.django-rest-framework.org/</code></pre>
   <pre><code> pip install djangorestframework</code></pre>
 
+<h4>Habilitando CORS no Django</h4>
+<a href="https://www.stackhawk.com/blog/django-cors-guide/">Guia do Django CORS: O que é e como habilitá-lo</a>
+<pre><code>python -m pip install django-cors-headers</code></pre>
+
 # --------------------------------------------------------------------------
 
 <h4>Para criar um usuario de acesso ao Djando-admin:</h4>
